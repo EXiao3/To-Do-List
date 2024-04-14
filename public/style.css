@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      #29b7c4,
+      #1b5eca,
+      #340f70
+  );
+}
+
+.header {
+    background-color: transparent;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ul {
+  width: 600px;
+  height: 225px;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: auto; 
+  margin: 0 auto; 
+}
+ul::-webkit-scrollbar {
+  height: 100px;
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Track */
+ul::-webkit-scrollbar-track {
+  background: transparent; /* Make the scrollbar track transparent */
+}
+
+/* Handle */
+ul::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5); /* Set scrollbar handle color with transparency */
+  border-radius: 6px; /* Rounded corners of the scrollbar handle */
+}
+
+/* Handle on hover */
+ul::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7); /* Set scrollbar handle color on hover with transparency */
+}
+
+ul li{
+  width: 600px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:hover {
+  background: #ddd;
+}
+
+
+.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+  }
+
+.checked::before{
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  transition: transform 0.3s ease-in-out; 
+  }
+  
+.close:hover {
+  background-color: #f44336;
+  transform: scale(1.2);
+  color: white;
+}
+
+
+.input-container {
+  display: flex; 
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px; 
+  overflow: hidden; 
+  background-color: #f2f2f2; 
+  padding: 5px; 
+  margin-top: 10px;
+  margin-bottom: 0px; 
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+.input-container input[type="text"] {
+  flex: 1; 
+  padding: 10px; 
+  border: none;
+  outline: none; 
+}
+
+.input-container button {
+  padding: 10px 20px; 
+  background-color: #4CAF50;
+  color: white; 
+  border: none; 
+  border-radius: 0 10px 10px 0; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+}
+
+
+.input-container button:hover {
+  background-color: #45a049;
+}

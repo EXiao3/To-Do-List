@@ -1,0 +1,7 @@
+[
+    { "name": "Gym", "checked": false },
+    { "name": "Pay bills", "checked": true },
+    { "name": "Cook", "checked": false },
+    { "name": "Buy milk", "checked": false },
+    { "name": "Stretch", "checked": false }
+  ]
